@@ -9,8 +9,15 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
+<<<<<<< HEAD
                     HOLA COMO ESTAS YINA <br>
                     ALITA HACE EL CAMBIO
+=======
+                    HOLA COMO ESTAS YINA
+                    Hola Cara de Polla
+
+                    DAME ALMUERZO PORFIS
+>>>>>>> 2f97f5f39f09026502969432039b229502ab87ba
                 </div>
             </div>
         </div>
