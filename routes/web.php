@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InicioController;
+use App\Http\Controllers\CategoriasController;
+use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\VentasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +18,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+//Principal
+Route::get('/', [InicioController::class,'Index']);
+Route::get('/dashboard', [InicioController::class,'Inicio']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+//Productos
+
+//Categorias
+Route::get('categoria/listado',[CategoriasController::class,'Listado'])->name('listado');
+Route::get('categoria/registro', [CategoriasController::class,'RegistroForm'])->name('listadoreg');
+Route::post('categoria/registro', [CategoriasController::class,'Registro']);
+Route::get('categoria/consulta',[CategoriasController::class,'Consulta']);
+//Route::post('categoria',[ProductosController::class,'registrar']);
+//Clientes
+
+//Ventas
 
 require __DIR__.'/auth.php';
+
+/*Route::get('/dashboard', function () {    
+})->middleware(['auth'])->name('dashboard');*/

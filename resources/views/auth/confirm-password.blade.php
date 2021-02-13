@@ -1,13 +1,17 @@
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+            <style>
+                h1 {color: #000000;}
+            </style>
+            <a href="https://www.udenar.edu.co/">
+            <h1><strong>"PAN DE MAIZ LA 13"</strong></h1><br>
+                <img src="{{url('imagenes/logo.jpg')}}" height="170" width="170">
             </a>
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
+            {{ __('Esta es un área segura de la aplicación. Confirme su contraseña antes de continuar.') }}
         </div>
 
         <!-- Validation Errors -->
@@ -28,7 +32,7 @@
 
             <div class="flex justify-end mt-4">
                 <x-button>
-                    {{ __('Confirm') }}
+                    {{ __('Confirmar') }}
                 </x-button>
             </div>
         </form>
