@@ -10,8 +10,8 @@ use App\Models\Producto;
 class CategoriasController extends Controller
 {
     public function Listado(){
-        $categorias = Categoria::all();
-        return view('Categorias.categorias_listado', ['categorias' => $categorias]);
+        $categoria = Categoria::all();
+        return view('Categorias.categorias_listado', ['categoria' => $categoria]);
     }
 
     public function RegistroForm(){
@@ -20,16 +20,29 @@ class CategoriasController extends Controller
     }
 
     public function Registro(Request $request){
-        $category = new Categoria();
-        $category->nombreCategoria = $request->input('nombreCat');
-        $category->descripcion = $request->input('descripcionCat');
-        $category->save();
+        $categoria = new Categoria();
+        $categoria->nombreCategoria = $request->input('nombreCat');
+        $categoria->descripcion = $request->input('descripcionCat');
+        $categoria->save();
         return redirect()->route('listado');
     }
 
-    public function Consulta(){
+    public function ActualizarForm($id){
+        $categoria = Categoria::findOrFail($id);
+        return view('Categorias.categorias_actualizar', compact('categoria'));
+    }
+
+    public function Actualizar(Request $request, $id){
+        $categoria = Categoria::findOrFail($id);
+        $categoria->nombreCategoria = $request->input('nombreCat');
+        $categoria->descripcion = $request->input('descripcionCat');
+        $categoria->save();
+        return redirect()->route('listado');
+    }
+
+    /*public function Consulta(){
         $categorias = Categoria::all();
         return view('Categorias.categorias_consulta', ['categorias' => $categorias]);
-    }
+    }*/
 
 }

@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h1 class="font-semibold text-xl text-gray-800 leading-tight" align="center"><strong>{{ __('LISTADO CATEGORIAS') }}</strong> </h1>
+        <h2 align="center"><strong>{{ __('LISTADO CATEGORIAS') }}</strong></h2>
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -11,20 +11,26 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nombre Categoria</th>
-                            <th scope="col">Descripción </th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Acciones</th>
                         </tr>
                     </thead>
-                    <tbody class="table table-striped table-secondary">
-                        @foreach($categorias as $c)
+                    <tbody class="table table-striped table-info">
+                        @foreach($categoria as $c)
                             <tr>
-                                <th scope="col"> {{ $c->id }} </th>
-                                <th scope="col"> {{ $c->nombreCategoria }} </th>
-                                <th scope="col"> {{ $c->descripcion }}</th>
-                                <th>
-                                    <a href="">
-                                        <button class="btn-sm btn-warning my-2 my-sm-0" type="submit" ><strong>ACTUALIZAR</strong></button>
+                                <td scope="col"> {{ $c->id }} </td>
+                                <td scope="col"> {{ $c->nombreCategoria }} </td>
+                                <td scope="col"> {{ $c->descripcion }}</td>
+                                <td>
+                                    <a href="{{route('form_actualizacat', $c->id)}}">
+                                        <button class="btn-sm btn-primary my-2 my-sm-0" type="submit" ><strong>ACTUALIZAR</strong></button>
                                     </a>
-                                </th>
+                                </td>
+                                <td>
+                                    <a href="categoria/eliminar">
+                                        <button class="btn-sm btn-danger my-2 my-sm-0" type="submit" ><strong>ELIMINAR</strong></button>
+                                    </a>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>

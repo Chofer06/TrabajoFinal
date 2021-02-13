@@ -26,10 +26,14 @@ Route::get('/dashboard', [InicioController::class,'Inicio']);
 
 //Categorias
 Route::get('categoria/listado',[CategoriasController::class,'Listado'])->name('listado');
-Route::get('categoria/registro', [CategoriasController::class,'RegistroForm'])->name('listadoreg');
+Route::get('categoria/registro', [CategoriasController::class,'RegistroForm']);
 Route::post('categoria/registro', [CategoriasController::class,'Registro']);
-Route::get('categoria/consulta',[CategoriasController::class,'Consulta']);
-//Route::post('categoria',[ProductosController::class,'registrar']);
+
+Route::get('categoria/actualizar/{id}', [CategoriasController::class,'ActualizarForm'])->name('form_actualizacat');
+Route::post('categoria/actualizar/{id}',[CategoriasController::class,'Actualizar'])->name('actualizacat');
+
+Route::post('categoria/eliminar', [CategoriasController::class,'Registro']);
+Route::get('categoria/eliminar',[CategoriasController::class,'Consulta']);
 //Clientes
 
 //Ventas
