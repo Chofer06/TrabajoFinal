@@ -9,9 +9,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 
-
-<H1 align="center" style="color: #FC0101"><strong>"PANADERIA PAN DE MAIZ TRADICIONAL DE LA 13"</strong></H1>
-<nav class="navbar navbar-expand-lg navbar-light bg-gradient font-weight-bold" style="background-color: #7FFC01">
+<H1 align="center" style="color: #ffffff"><strong><h1 style="background-color: #000000">"PANADERIA PAN DE MAIZ TRADICIONAL DE LA 13"</h1></strong></H1>
+<nav class="navbar navbar-expand-lg navbar-light bg-gradient font-weight-bold" style="color: #ffffff">
     <div class="container-fluid">
         <div class="flex-shrink-0 flex items-center">
             <a href="{{url('/dashboard')}}"><img src="{{url('imagenes/logo.jpg')}}" height="50" width="50"></a>

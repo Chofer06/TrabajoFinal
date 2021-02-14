@@ -40,9 +40,23 @@ class CategoriasController extends Controller
         return redirect()->route('listado');
     }
 
-    /*public function Consulta(){
-        $categorias = Categoria::all();
-        return view('Categorias.categorias_consulta', ['categorias' => $categorias]);
-    }*/
+    public function Eliminar($id){
+        $categoria = Categoria::findOrFail($id);
+        $categoria->delete();
+        return redirect()->route('listado');
+    }
+
+    public function ConsultaForm(){
+        return view('Categorias.categorias_consulta');
+    }
+
+    public function Consulta(Request $request){
+        $nombre = $request->input('nombreCat');
+        $categoria = Categoria::where('nombreCategoria','like',$nombre)->first();
+        if($categoria)
+            return view('Categorias.categorias_resultado', compact('categoria'));
+        else
+            return view('Categorias.categorias_mensaje');
+    }
 
 }
