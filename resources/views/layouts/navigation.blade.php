@@ -38,6 +38,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>CLIENTES</strong></a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{url('/cliente/listado')}}">Listado</a>
                     <a class="dropdown-item" href="{{url('/cliente/registro')}}">Registro</a>
                     <a class="dropdown-item" href="{{url('/cliente/consulta')}}">Consulta</a>
                 </div>

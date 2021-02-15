@@ -43,10 +43,17 @@ Route::get('categoria/consulta', [CategoriasController::class,'ConsultaForm'])->
 Route::post('categoria/consulta', [CategoriasController::class,'Consulta'])->name('consultacat');
 
 //Clientes
-
+Route::get('cliente/listado',[ClientesController::class,'Listado'])->name('listadoC');
+Route::get('cliente/registro', [ClientesController::class,'RegistroForm']);
+Route::post('cliente/registro', [ClientesController::class,'Registro']);
+/*Route::get('cliente/actualizar/{id}', [ClientesController::class,'ActualizarForm'])->name('form_actualizacli');
+Route::post('cliente/actualizar/{id}',[ClientesController::class,'Actualizar'])->name('actualizacli');
+Route::get('cliente/consulta', [ClientesController::class,'ConsultaForm'])->name('form_consultacli');
+Route::post('cliente/consulta', [ClientesController::class,'Consulta'])->name('consultacli');
+*/
 //Ventas
 
 require __DIR__.'/auth.php';
 
-/*Route::get('/dashboard', function () {    
+/*Route::get('/dashboard',function () {    
 })->middleware(['auth'])->name('dashboard');*/
