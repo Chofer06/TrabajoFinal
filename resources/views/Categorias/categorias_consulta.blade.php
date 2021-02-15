@@ -8,7 +8,10 @@
                     <label><strong>NOMBRE CATEGORIA</strong></label>
                     <input required type="text" class="form-control input-sm" id="nombreCat" name="nombreCat" style="width : 300px; heigth : 1px">
                 </div><br>
-                <button type="submit" class="btn btn-warning">Consultar</button>
+                <button type="submit" class="btn-sm btn-warning">Consultar</button>
+                <a href="{{url('categoria/listado')}}">
+                    <button type="button" class="btn-sm btn-danger">Regresar</button>
+                </a>
             </form>
         </div>
     </x-slot>

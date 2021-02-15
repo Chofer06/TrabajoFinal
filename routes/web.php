@@ -23,6 +23,14 @@ Route::get('/', [InicioController::class,'Index']);
 Route::get('/dashboard', [InicioController::class,'Inicio']);
 
 //Productos
+Route::get('producto/listado',[ProductosController::class,'Listado'])->name('listadoP');
+Route::get('producto/registro', [ProductosController::class,'RegistroForm']);
+Route::post('producto/registro', [ProductosController::class,'Registro']);
+Route::get('producto/actualizar/{id}', [ProductosController::class,'ActualizarForm'])->name('form_actualizapro');
+Route::post('producto/actualizar/{id}',[ProductosController::class,'Actualizar'])->name('actualizarpro');
+Route::get('producto/eliminar/{id}',[ProductosController::class,'Eliminar'])->name('eliminarpro');
+Route::get('producto/consulta', [ProductosController::class,'ConsultaForm'])->name('form_consultapro');
+Route::post('producto/consulta', [ProductosController::class,'Consulta'])->name('consultapro');
 
 //Categorias
 Route::get('categoria/listado',[CategoriasController::class,'Listado'])->name('listado');
@@ -33,6 +41,7 @@ Route::post('categoria/actualizar/{id}',[CategoriasController::class,'Actualizar
 Route::get('categoria/eliminar/{id}',[CategoriasController::class,'Eliminar'])->name('eliminarcat');
 Route::get('categoria/consulta', [CategoriasController::class,'ConsultaForm'])->name('form_consultacat');
 Route::post('categoria/consulta', [CategoriasController::class,'Consulta'])->name('consultacat');
+
 //Clientes
 
 //Ventas

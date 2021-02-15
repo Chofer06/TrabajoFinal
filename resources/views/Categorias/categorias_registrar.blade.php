@@ -13,6 +13,9 @@
                     <input type="text" class="form-control input-sm" id="descripcionCat" name="descripcionCat" required style="width : 300px; heigth : 1px">
                 </div><br>
                 <button type="submit" class="btn-sm btn-primary">AGREGAR</button>
+                <a href="{{url('categoria/listado')}}">
+                    <button type="button" class="btn-sm btn-danger">REGRESAR</button>
+                </a>
             </form>
         </div>
     </x-slot>
