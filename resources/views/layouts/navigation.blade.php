@@ -44,7 +44,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="{{url('ventas')}}"><strong>VENTAS</strong><span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{url('/acerca')}}"><strong>ACERCA DE</strong><span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <div class="hidden sm:flex sm:items-center sm:ml-6" >

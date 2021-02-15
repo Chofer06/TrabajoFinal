@@ -11,7 +11,7 @@
                 <td><strong>EMAIL</strong></td>
                 <td><strong>TELEFONO</strong></td>
                 <td><strong>GENERO</strong></td>
-                <td colspan="2" align="center"><strong>ACCIONES</strong></td>
+                <td><strong>ACCIONES</strong></td>
             </tr>
             @foreach($cliente as $c)
             <tr>
@@ -22,18 +22,15 @@
                 <td> {{$c->direccionCliente}}</td>
                 <td> {{$c->emailCliente}} </td>
                 <td> {{$c->telefonoCliente}} </td>
-                @if($c->generoCliente == 'M')
+                @if($c->generoCliente == 'M' || $c->generoCliente == 'm')
                     <td>Masculino</td>
                 @endif
-                @if($c->generoCliente == 'F')
+                @if($c->generoCliente == 'F' || $c->generoCliente == 'f')
                     <td>Femenino</td>
                 @endif
-                <td align="center">
-                    <a href="{{route('form_actualizapro', $c->id)}}">
+                <td>
+                    <a href="{{route('form_actualizacli', $c->id)}}">
                         <button class="btn-sm btn-success my-2 my-sm-1" type="submit" ><strong>ACTUALIZAR</strong></button>
-                    </a>&nbsp;
-                    <a href="{{route('eliminarpro', $c->id)}}">
-                        <button class="btn-sm btn-danger my-2 my-sm-1" type="submit" ><strong>ELIMINAR</strong></button>
                     </a>
                 </td>
             </tr>

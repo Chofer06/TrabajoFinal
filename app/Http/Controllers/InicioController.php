@@ -13,4 +13,8 @@ class InicioController extends Controller
     public function Inicio(){
         return view('dashboard');
     }
+
+    public function Acerca(){
+        return view('acerca');
+    }
 }

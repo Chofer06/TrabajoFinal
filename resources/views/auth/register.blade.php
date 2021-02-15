@@ -5,7 +5,7 @@
                 h1 {color: #000000;}
             </style>
             <a href="https://www.udenar.edu.co/">
-            <h1><strong>"PAN DE MAIZ LA 13"</strong></h1><br>
+                <h1><strong>"PAN DE MAIZ LA 13"</strong></h1><br>
                 <img src="{{url('imagenes/logo.jpg')}}" height="170" width="170">
             </a>
         </x-slot>
