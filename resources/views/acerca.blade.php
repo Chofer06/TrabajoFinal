@@ -45,6 +45,7 @@
                                 Honestidad <br>
                                 Sinceridad <br>
                                 Empatia <br>
+                                hola
                             </p>
                         </div>
                     </div>
