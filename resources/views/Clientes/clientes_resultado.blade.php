@@ -38,4 +38,5 @@
         </table>
         </div>
     </x-slot>
+    <H5 align="center" style="color: #ffffff"><strong><h5 style="background-color: #000000">© 2021 Copyright<br>David Fernando Mueses Mallama<br>Yolima Garley Quiroz Rosero</h5></strong></H5>
 </x-app-layout>

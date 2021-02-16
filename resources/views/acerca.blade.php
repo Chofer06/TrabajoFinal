@@ -4,7 +4,8 @@
             <div class="row">
                 <div class="col-md-4"> 
                     <div class="card">
-                        <img class="card-img-top" height="240" src="https://i.blogs.es/0baa91/39f95492-38ee-4f16-92e1-ba5161f4a958/1366_2000.jpeg" alt="Card image cap">
+                        <!--img src="{{url('imagenes/1.jpg')}}" height="480" width="1100"-->
+                        <img class="card-img-top" height="240" src="{{url('imagenes/11.jpg')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title" align="center"><strong>MISIÓN</strong></h4>
                             <p class="card-text" id="msg" align="justify"> 
@@ -18,7 +19,7 @@
                 </div>
                 <div class="col-md-4"> 
                     <div class="card">
-                        <img class="card-img-top" height="240" src="https://www.elfinancierocr.com/resizer/-LliefCwWpNXvNFzmq1dT3esQt8=/600x0/center/middle/filters:quality(100)/arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/NXORKBUUUJC37N54XIRXJD7O6Q.jpg" alt="Card image cap">
+                        <img class="card-img-top" height="240" src="{{url('imagenes/10.jpg')}}" alt="Card image cap">
                             <div class="card-body">
                             <h4 class="card-title" align="center"><strong>VISIÓN</strong></h4>
                                 <p class="card-text" id="msg" align="justify"> 
@@ -32,7 +33,7 @@
                     </div>
                 <div class="col-md-4"> 
                     <div class="card">
-                        <img class="card-img-top" height="240" src="https://previews.123rf.com/images/jackf/jackf1612/jackf161200016/66595723-familia-feliz-ordinaria-con-los-ni%C3%B1os-que-compran-compras-en-supermercado.jpg" alt="Card image cap">
+                        <img class="card-img-top" height="240" src="{{url('imagenes/12.jpg')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title" align="center"><strong>VALORES</strong></h4>
                             <p class="card-text" id="msg">
@@ -42,6 +43,8 @@
                                 Responsabilidad <br>
                                 Confiabilidad <br>
                                 Honestidad <br>
+                                Sinceridad <br>
+                                Empatia <br>
                             </p>
                         </div>
                     </div>
@@ -49,4 +52,5 @@
             </div>
         </div>
     </x-slot>
+    <H5 align="center" style="color: #ffffff"><strong><h5 style="background-color: #000000">© 2021 Copyright<br>David Fernando Mueses Mallama<br>Yolima Garley Quiroz Rosero</h5></strong></H5>
 </x-app-layout>
