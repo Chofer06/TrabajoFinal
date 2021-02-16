@@ -1,16 +1,25 @@
 <x-app-layout>
     <x-slot name="header">
-        <h1 align="center"><strong>Bienvenidos Tu Panaderia Favorita :)</strong></h1><br>
+        <h1 align="center" style="color: #01016D"><strong>Bienvenidos Tu Panaderia Favorita :)</strong></h1><br>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://www.65ymas.com/uploads/s1/35/43/29/shopping-2613984-1920.jpeg" class="d-block w-100" alt="..." height ="550">
+                    <img src="{{url('imagenes/13.jpg')}}" class="d-block w-100" alt="..." height ="550">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/07/pareja-supermercado-1995039.jpg?itok=FeO3B7mv" class="d-block w-100" alt="..." height ="550">
+                    <img src="{{url('imagenes/14.jpg')}}" class="d-block w-100" alt="..." height ="550">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://www.bbva.com/wp-content/uploads/2016/12/Mujer-conduciendo-un-carrito-de-compras-en-un-supermercado.jpg" class="d-block w-100" alt="..." height ="550">
+                    <img src="{{url('imagenes/15.jpg')}}" class="d-block w-100" alt="..." height ="550">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url('imagenes/16.jpg')}}" class="d-block w-100" alt="..." height ="550">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url('imagenes/17.jpg')}}" class="d-block w-100" alt="..." height ="550">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url('imagenes/18.jpg')}}" class="d-block w-100" alt="..." height ="550">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
